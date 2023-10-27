@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --background: #f8f9fa;
+    --primary: #9f7db7;
+    --secondary: #B8D0EB;
+    --terciary: #B9FAF8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    align-items: center;
+    background: var(--background);
+    max-height: 80px;
+    max-width: 1920px;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    display: flex; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.simple-item .sanando-hoy-logo {
+    margin-top: 10px;
+}
+
+a {
+    color: black;
+}
+
+.simple-item a:hover {
+    font-weight: bold;
+    color: slategray;
+}
+
+.simple-item2 a {
+    font-weight: bold;
+    color: slategray;
+}
+
+.simple-item2 a:hover {
+    color: var(--secondary);
+}
+
+.contact-button {
+    background-color: var(--terciary);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: -5px;
+    align-items: right;
+    border: var(--terciary);
+}
+
+.inscripciones-button {
+    background-color: var(--secondary);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: -5px;
+    align-items: right;
+    border: var(--secondary);
+}
+
+.login {
+    font-size: 16px;
+    color: grey;
+    text-decoration: underline;
+}
+
+#menu-toggle,
+.menu-label {
+  display: none;
+}
+
+#hero {
+    padding: 50px 0 20px 50px;
+    max-width: 1920px;
+    height: 400px;
+    display: flex;
+    background-image: url(./Slide-22.png);
+}
+
+.hero-info {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    width: 80%;
+}
+
+.hero-info h1 {
+    font-size: 48px;
+    width: 60%;
+    font-weight: 700;
+    color: var(--secondary)
+}
+
+.hero-info p {
+    width: 60%;
+    color: #ffffff;
+}
+
+.hero-info button {
+    border-radius: 10px;
+    color: #000000;
+    background-color: var(--secondary); 
+    border: var(--secondary);
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+}
+
+.hero-image {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-sobre-mi {
+    padding: 50px;
+    text-align: center;
+}
+
+.sobre-mi {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+}
+
+.sobre-mi img {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre-mi p {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding-top: 45px;
+}
+
+.resumen {
+    padding: 20px;
+}
+
+#terapias {
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 40px 0 40px 0;
+}
+
+#terapias h3 {
+    text-align: center;
+}
+
+.cards-terapias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 30px 30px 40px 30px;
+    border-radius: 20%;
+}
+
+.card img {
+    max-width: 100px;
+    padding-top: 10px;
+    border-radius: 20%;
+}
+
+.card h4 {
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+}
+
+.cards-terapias .card:first-child {
+    background-color: var(--primary);
+}
+
+.cards-terapias .card:nth-child(2) {
+    background-color: var(--secondary);
+}
+
+.cards-terapias .card:last-child {
+    background-color: var(--terciary);
+}
+
+#contacto {
+    padding: 40px 40px 40px 0;
+}
+
+#contacto h2 {
+    color: var(--primary);
+    padding-left: 40px;
+}
+
+.bloque-contacto {
+    display: flex;
+    justify-content: left;
+    flex-direction: row;
+    max-width: 1920px;
+    padding: 40px;
+}
+
+.form-contacto {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+}
+
+.inputs {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    border-color: var(--secondary);
+    border-width: 1px;
+}
+
+.submit {
+    width: 100%;
+    background-color: var(--terciary);
+    border-radius: 15px;
+    padding: 10px;
+    border: var(--terciary);
+    margin-top: 10px;
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 1000px;
+}
+
+.info-contacto span {
+    display: flex;
+    padding-left: 10px;
+}
+
+.info-contacto h4 {
+    padding: 0 20px 0 20px;
+}
+
+.info-contacto p {
+    font-size: 16px;
+}
+
+.info-contacto a {
+    font-size: 16px;
+}
+
+.info-contacto img {
+    max-width: 30px;
+    padding-right: 10px;
+}
+
+#inscripcion {
+    padding: 50px;
+    text-align: center;
+}
+
+#inscripcion h2 {
+    color: var(--primary);
+}
+
+.resumen-inscripcion {
+    padding: 20px;
+}
+
+.form-inscripcion {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+#login-portal {
+    padding: 50px;
+    text-align: center;
+}
+
+#login-portal h2 {
+    color: var(--primary);
+}
+
+.form-login {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    padding: 10px 0 10px 0;
+}
+
+footer img {
+    max-width: 200px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sanando Hoy - Inscripciones</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+     <header>
+        <div class="Sanando-hoy-logo"><a href="index.html"><img src="logo.png" alt="logo" width="150"></a></div>            
+            <nav class="nav">
+                <label for="menu-toggle" class="menu-label">
+                    <img src="./menu.png" alt="menu" class="menu-icon">
+                </label>
+                <input type="checkbox" id="menu-toggle">
+                    <ul class="nav-list">
+                        <li class="nav-item simple-item2">
+                            <a href="./index.html">Volver a Sanando Hoy</a></button></li>
+
+                        <li class="nav-item">
+                            <a class="login" href="./portal.html">Ingreso al portal</a></li>
+                    </ul>
+            </nav>
+    </header>
+        <main id="inscripcion">
+            <h2>Inscribite a nuestros proximos cursos</h2>
+			<div class="resumen-inscripcion">
+				<p>Una vez completado el formulario recibiras un mail con un link para verificar tu cuenta, luego podras ingresar al portal con tu email y contraseña y acceder al material de preparacion para el curso.</p>
+		    </div>
+        </main>
+        <section>
+			<div class="form-inscripcion">	
+				<form>
+					<div>Email <input class="inputs" type="email" label="Email"></div>
+                    <div>Contraseña <input class="inputs" type="password" label="Contraseña"></div>
+					<div>Curso
+						<select class="inputs" name="Curso">
+							<option value="" selected>-- Selecciona una opción --</option>
+							<option value="Registros Akashicos"> Iniciacion a Registros Akashicos</option>
+							<option value="Feng Shui1"> Feng Shui - Nivel 1</option>
+                            <option value="Feng Shui2"> Feng Shui - Nivel 2</option>
+							<option value="Magnified Healing1"> Magnified Healing - Nivel Inicial </option>
+                            <option value="Magnified Healing2"> Magnified Healing - Nivel Maestro </option>
+						</select>
+					</div>
+                    <div>Fecha
+						<select class="inputs" name="Fecha">
+							<option value="" selected>-- Selecciona una opción --</option>
+							<option value="Marzo24"> Marzo 2024</option>
+							<option value="Mayo24"> Mayo 2024</option>
+                            <option value="Julio24"> Julio 2024</option>
+							<option value="Septiembre"> Septiembre 2024 </option>
+						</select>
+					</div>
+					<div><input class="submit" type="submit" label="Registrarse" value="Registrarse"></div>
+				</form>
+			</div>
+        </section>
+</body>
+<footer>
+    <img src="./logo.png" alt="logo"/>
+</footer>
+</html>
